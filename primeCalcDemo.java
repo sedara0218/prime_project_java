@@ -108,12 +108,13 @@ public class primeCalcDemo
 			// }
 			// System.out.println();
 			// //System.out.println((primes.get(primes.size()-1)).getBigInt());
-
-			start = getNextPoss((primes.get(primes.size()-1)).getBigInt());
-			end = minNextPoss(start);
-			poss = getPossArray(start, end);
+			if (z+1 != iter) {
+				start = getNextPoss((primes.get(primes.size()-1)).getBigInt());
+				end = minNextPoss(start);
+				poss = getPossArray(start, end);
+		
+			}
 		}
-
 		long endTime = System.nanoTime();		
 		double exeTime = (endTime - startTime)/1000000.0; 
 
