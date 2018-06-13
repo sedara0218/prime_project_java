@@ -7,6 +7,7 @@
 #### 2. Open the terminal or command prompt to the location of the directory where the files are saved. <br />
 #### 3. Type `java programEfficiency` into the terminal
   * to end the program before completion press ctrl-C
+  * view the note at the bottom of this page to run the program with MORE memory
 
 ## Expected Output: 
 *Note times will vary per machine
@@ -77,6 +78,7 @@ Exception in thread "main" java.lang.OutOfMemoryError: Java heap space
 	at primeCalcDemo.main(primeCalcDemo.java:114)
 ```
 I believe this is due to the fact that the algorithm I wrote uses way to much memory as I am storing millions of numbers.  In order to get around this I am currenlty rewritting this in C++ and will instead use local harddrive to store the numbers in my lists.  This way only a small portion of the memory will store the current iteration of numbers needed and I can quickly access and change the current list in memory using parallel processing so it shouldn't terribly affect the time taken for the algorithm. 
+
 ### *NOTE: YOU CAN RUN THE PROGRAM FOR A COUPLE MORE ITERATIONS BY INCREASING JVM MEMORY.  TO DO THIS USE THE FOLLOWING COMMAND WHEN RUNNING IN THE TERMINAL:
 ```
 java -Xmx8g primeCalcDemo 15
