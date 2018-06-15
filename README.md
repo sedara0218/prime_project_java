@@ -10,6 +10,8 @@
   * view the note at the bottom of this page to run the program with MORE memory
 
 ## Expected Output: 
+### *VIEW THE BOTTOM OF THIS PAGE FOR RUNTIME COMPARISIONS TO FAMOUS PRIME GENERATORS
+
 *Note times will vary per machine
 
 ```
@@ -82,8 +84,94 @@ I believe this is due to the fact that the algorithm I wrote uses way to much me
 ### *NOTE: YOU CAN RUN THE PROGRAM FOR A COUPLE MORE ITERATIONS BY INCREASING JVM MEMORY.  TO DO THIS USE THE FOLLOWING COMMAND WHEN RUNNING IN THE TERMINAL:
 ```
 java -Xmx8g primeCalcDemo 15
-This will run the program with 8gb of memory.
 ```
+This will run the program with 8gb of memory.
 
+## Runtime Comparisions to famous prime generators:
+If you are well adversed with common prime generation algorithms, then you should be aware of these three effecient prime generation algorithms:
+  * Sieve of Eratosthenes (https://www.geeksforgeeks.org/sieve-of-eratosthenes/)
+  * Sieve of Sundaram (https://www.geeksforgeeks.org/sieve-sundaram-print-primes-smaller-n/)
+  * Sieve of Atkin (https://www.geeksforgeeks.org/sieve-of-atkin/)
+  
+I downloaded the code posted on the geeksforgeeks.org website, and changed the int primitive type to BigInteger so that it would match the type I used in my own algorithm.  Posted below are the runtime comparisions when running each of the algorithms:
+```
+N = 19
+RunTime Output:  Time for PrimeFactor Algo: 0.337128 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 0.773121 ms
+RunTime Output:  Time for Sundaram Algo: 0.984756 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.833837 ms
 
+N = 61
+RunTime Output:  Time for PrimeFactor Algo: 0.572111 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 1.012238 ms
+RunTime Output:  Time for Sundaram Algo: 1.361967 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.836227 ms
 
+N = 181
+RunTime Output:  Time for PrimeFactor Algo: 1.292388 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 1.6006 ms
+RunTime Output:  Time for Sundaram Algo: 2.200034 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.903148 ms
+
+N = 547
+RunTime Output:  Time for PrimeFactor Algo: 2.948037 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 3.66841 ms
+RunTime Output:  Time for Sundaram Algo: 4.774039 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.885588 ms
+
+N = 1637
+RunTime Output:  Time for PrimeFactor Algo: 5.933537 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 7.155151 ms
+RunTime Output:  Time for Sundaram Algo: 9.036404 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.858282 ms
+
+N = 4909
+RunTime Output:  Time for PrimeFactor Algo: 12.649911 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 11.531344 ms
+RunTime Output:  Time for Sundaram Algo: 17.689583 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.844921 ms
+
+N = 14731
+RunTime Output:  Time for PrimeFactor Algo: 23.163009 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 18.72076 ms
+RunTime Output:  Time for Sundaram Algo: 36.375983 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.848306 ms
+
+N = 44189
+RunTime Output:  Time for PrimeFactor Algo: 41.237302 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 44.402246 ms
+RunTime Output:  Time for Sundaram Algo: 87.493372 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.878022 ms
+
+N = 132547
+RunTime Output:  Time for PrimeFactor Algo: 86.579419 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 101.688847 ms
+RunTime Output:  Time for Sundaram Algo: 185.899978 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.847487 ms
+
+N = 397643
+RunTime Output:  Time for PrimeFactor Algo: 159.524152 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 195.536117 ms
+RunTime Output:  Time for Sundaram Algo: 389.430587 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.83482 ms
+
+N = 1192937
+RunTime Output:  Time for PrimeFactor Algo: 425.488908 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 1381.50103 ms
+RunTime Output:  Time for Sundaram Algo: 1239.723367 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.832785 ms
+
+N = 3578807
+RunTime Output:  Time for PrimeFactor Algo: 1533.816482 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 3446.888499 ms
+RunTime Output:  Time for Sundaram Algo: 4029.911306 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.833458 ms
+
+N = 10736413
+RunTime Output:  Time for PrimeFactor Algo: 4888.353792 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 13512.832954 ms
+RunTime Output:  Time for Sundaram Algo: 14457.398485 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 0.847659 ms
+Done!
+```
+As can be seen above, my algorithm, while not the fastest, is much faster than the two slower Sieves!!!  If you are skeptical of my results you can view the geeksforgeeks.org site I linked above for the respective Sieve, download the Java code, modify the code so that you are using BigIntegers OR use my primeCalcDemo_INTEGER.java file instead of the primeCalcDemo.java file.  The reason for this is that BigInteger adds to the runtime of the algorithm as it is basically a list of integers which obviously takes up more bytes than a simple primitive integer type.
