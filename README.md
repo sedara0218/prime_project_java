@@ -96,129 +96,90 @@ If you are well adversed with common prime generation algorithms, then you shoul
 I downloaded the code posted on the geeksforgeeks.org website, and changed the int primitive type to BigInteger so that it would match the type I used in my own algorithm.  Posted below are the runtime comparisions when running each of the algorithms:
 ```
 N = 19
-RunTime Output:  Time for My EDARA Algo: 0.360946 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 0.762038 ms
-RunTime Output:  Time for Sundaram Algo: 0.98747 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.856554 ms
+RunTime Output:  Time for My EDARA Algo: 0.515184 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 0.857288 ms
+RunTime Output:  Time for Sundaram Algo: 1.348159 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 1.741106 ms
 
 N = 61
-RunTime Output:  Time for My EDARA Algo: 0.63967 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 0.991794 ms
-RunTime Output:  Time for Sundaram Algo: 1.353262 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.836473 ms
+RunTime Output:  Time for My EDARA Algo: 0.577519 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 0.997515 ms
+RunTime Output:  Time for Sundaram Algo: 1.308766 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 3.151065 ms
 
 N = 181
-RunTime Output:  Time for My EDARA Algo: 1.242635 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 1.608379 ms
-RunTime Output:  Time for Sundaram Algo: 2.488601 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.836096 ms
+RunTime Output:  Time for My EDARA Algo: 1.196069 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 1.597736 ms
+RunTime Output:  Time for Sundaram Algo: 2.353183 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 5.796125 ms
 
 N = 547
-RunTime Output:  Time for My EDARA Algo: 2.994189 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 3.572769 ms
-RunTime Output:  Time for Sundaram Algo: 5.239958 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.915496 ms
+RunTime Output:  Time for My EDARA Algo: 3.183867 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 3.268081 ms
+RunTime Output:  Time for Sundaram Algo: 5.212332 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 10.135988 ms
 
 N = 1637
-RunTime Output:  Time for My EDARA Algo: 6.040511 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 6.466071 ms
-RunTime Output:  Time for Sundaram Algo: 9.24433 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.850505 ms
+RunTime Output:  Time for My EDARA Algo: 9.611169 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 7.759105 ms
+RunTime Output:  Time for Sundaram Algo: 12.920162 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 17.036979 ms
 
 N = 4909
-RunTime Output:  Time for My EDARA Algo: 13.10111 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 10.040123 ms
-RunTime Output:  Time for Sundaram Algo: 17.429241 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.853673 ms
+RunTime Output:  Time for My EDARA Algo: 13.141681 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 11.001805 ms
+RunTime Output:  Time for Sundaram Algo: 16.087704 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 47.221882 ms
 
 N = 14731
-RunTime Output:  Time for My EDARA Algo: 23.733195 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 24.936006 ms
-RunTime Output:  Time for Sundaram Algo: 36.943461 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.866346 ms
+RunTime Output:  Time for My EDARA Algo: 22.992999 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 22.813391 ms
+RunTime Output:  Time for Sundaram Algo: 39.544612 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 63.810715 ms
 
 N = 44189
-RunTime Output:  Time for My EDARA Algo: 46.46009 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 45.496277 ms
-RunTime Output:  Time for Sundaram Algo: 80.785687 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.855372 ms
+RunTime Output:  Time for My EDARA Algo: 46.796873 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 45.773029 ms
+RunTime Output:  Time for Sundaram Algo: 84.541303 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 124.223001 ms
 
 N = 132547
-RunTime Output:  Time for My EDARA Algo: 87.269402 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 90.206854 ms
-RunTime Output:  Time for Sundaram Algo: 178.388403 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.827621 ms
+RunTime Output:  Time for My EDARA Algo: 131.795781 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 114.86514 ms
+RunTime Output:  Time for Sundaram Algo: 194.179972 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 237.746747 ms
 
 N = 397643
-RunTime Output:  Time for My EDARA Algo: 155.635449 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 198.379035 ms
-RunTime Output:  Time for Sundaram Algo: 382.481201 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.843782 ms
+RunTime Output:  Time for My EDARA Algo: 169.504458 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 205.429847 ms
+RunTime Output:  Time for Sundaram Algo: 381.067349 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 579.519665 ms
 
 N = 1192937
-RunTime Output:  Time for My EDARA Algo: 424.498919 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 1377.984797 ms
-RunTime Output:  Time for Sundaram Algo: 1225.67866 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.83986 ms
+RunTime Output:  Time for My EDARA Algo: 413.033449 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 1377.550607 ms
+RunTime Output:  Time for Sundaram Algo: 1207.085806 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 2197.992309 ms
 
 N = 3578807
-RunTime Output:  Time for My EDARA Algo: 1527.620358 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 3435.861479 ms
-RunTime Output:  Time for Sundaram Algo: 4010.106851 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.834432 ms
+RunTime Output:  Time for My EDARA Algo: 1613.045521 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 4036.730272 ms
+RunTime Output:  Time for Sundaram Algo: 4511.915289 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 6032.365983 ms
 
 N = 10736413
-RunTime Output:  Time for My EDARA Algo: 4828.215248 ms
-RunTime Output:  Time for Sieve of Eratosthenes Algo: 13433.728233 ms
-RunTime Output:  Time for Sundaram Algo: 14250.571638 ms
-RunTime Output:  Time for Sieve of Atkin Algo: 0.848753 ms
+RunTime Output:  Time for My EDARA Algo: 5324.038924 ms
+RunTime Output:  Time for Sieve of Eratosthenes Algo: 15306.861956 ms
+RunTime Output:  Time for Sundaram Algo: 15263.137452 ms
+RunTime Output:  Time for Sieve of Atkin Algo: 20202.084604 ms
 
 Done!
 ```
-As can be seen above, my algorithm, while not the fastest, is much faster than the two slower Sieves!!!  If you are skeptical of my results you can view the geeksforgeeks.org site I linked above for the respective Sieve, download the Java code, modify the code so that you are using BigIntegers OR use my Sieve_EDARA_INTEGER.java file for testing instead of the Sieve_EDARA.java file.  The reason for this is that BigInteger adds to the runtime of the algorithm as it is basically a list of integers which obviously takes up more bytes than a simple primitive integer type.
+As can be seen above, my algorithm, is much faster than the Sieves!!!  If you are skeptical of my results you can view the geeksforgeeks.org site I linked above for the respective Sieve, download the Java code, modify the code so that you are using BigIntegers OR use my Sieve_EDARA_INTEGER.java file for testing instead of the Sieve_EDARA.java file.  The reason for this is that BigInteger adds to the runtime of the algorithm as it is basically a list of integers which obviously takes up more bytes than a simple primitive integer type.
 
-Posted below are the runtimes for my EDARA algo using the integer primitive type:
+Posted below are the runtimes for the above Sieve Comparisions using the integer primitive type:
 
-*Note: this can be run by typing `java programEfficiency_EDARA_INT` in the terminal.
+*Note: you can verify this by downloading the code posted for the respective Sieves from the geeksforgeeks site above and compare the times taken for that code with the time taken by my algorithm using the int primitive type in the Sieve_EDARA_INTEGER.java file.
 ```
-N = 19
-RunTime Output:  Time for My EDARA Algo: 0.307315 ms
 
-N = 61
-RunTime Output:  Time for My EDARA Algo: 0.351426 ms
-
-N = 181
-RunTime Output:  Time for My EDARA Algo: 0.524727 ms
-
-N = 547
-RunTime Output:  Time for My EDARA Algo: 1.000302 ms
-
-N = 1637
-RunTime Output:  Time for My EDARA Algo: 2.472271 ms
-
-N = 4909
-RunTime Output:  Time for My EDARA Algo: 3.941444 ms
-
-N = 14731
-RunTime Output:  Time for My EDARA Algo: 7.726192 ms
-
-N = 44189
-RunTime Output:  Time for My EDARA Algo: 13.092983 ms
-
-N = 132547
-RunTime Output:  Time for My EDARA Algo: 30.873247 ms
-
-N = 397643
-RunTime Output:  Time for My EDARA Algo: 57.614836 ms
-
-N = 1192937
-RunTime Output:  Time for My EDARA Algo: 140.853198 ms
-
-N = 3578807
-RunTime Output:  Time for My EDARA Algo: 423.0058 ms
-
-N = 10736413
-RunTime Output:  Time for My EDARA Algo: 2574.043819 ms
-
-Done!
 ```
