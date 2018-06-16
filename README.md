@@ -175,11 +175,4 @@ RunTime Output:  Time for Sieve of Atkin Algo: 20202.084604 ms
 
 Done!
 ```
-As can be seen above, my algorithm, is much faster than the Sieves!!!  If you are skeptical of my results you can view the geeksforgeeks.org site I linked above for the respective Sieve, download the Java code, modify the code so that you are using BigIntegers OR use my Sieve_EDARA_INTEGER.java file for testing instead of the Sieve_EDARA.java file.  The reason for this is that BigInteger adds to the runtime of the algorithm as it is basically a list of integers which obviously takes up more bytes than a simple primitive integer type.
-
-Posted below are the runtimes for the above Sieve Comparisions using the integer primitive type:
-
-*Note: you can verify this by downloading the code posted for the respective Sieves from the geeksforgeeks site above and compare the times taken for that code with the time taken by my algorithm using the int primitive type in the Sieve_EDARA_INTEGER.java file.
-```
-
-```
+As can be seen above, my algorithm, is faster than the Sieves!!!  If you are skeptical of my results you can view the geeksforgeeks.org site I linked above for the respective Sieve, download the Java code, modify the code so that you are using BigIntegers.  The reason for this is because BigInteger is basically a list of integers which allows the program to not be bounded by time constraints of the common primitive int type.
