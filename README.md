@@ -176,3 +176,47 @@ RunTime Output:  Time for Sieve of Atkin Algo: 0.848753 ms
 Done!
 ```
 As can be seen above, my algorithm, while not the fastest, is much faster than the two slower Sieves!!!  If you are skeptical of my results you can view the geeksforgeeks.org site I linked above for the respective Sieve, download the Java code, modify the code so that you are using BigIntegers OR use my Sieve_EDARA_INTEGER.java file for testing instead of the Sieve_EDARA.java file.  The reason for this is that BigInteger adds to the runtime of the algorithm as it is basically a list of integers which obviously takes up more bytes than a simple primitive integer type.
+
+Posted below are the runtimes for my EDARA algo using the integer primitive type:
+```
+N = 19
+RunTime Output:  Time for My EDARA Algo: 0.307315 ms
+
+N = 61
+RunTime Output:  Time for My EDARA Algo: 0.351426 ms
+
+N = 181
+RunTime Output:  Time for My EDARA Algo: 0.524727 ms
+
+N = 547
+RunTime Output:  Time for My EDARA Algo: 1.000302 ms
+
+N = 1637
+RunTime Output:  Time for My EDARA Algo: 2.472271 ms
+
+N = 4909
+RunTime Output:  Time for My EDARA Algo: 3.941444 ms
+
+N = 14731
+RunTime Output:  Time for My EDARA Algo: 7.726192 ms
+
+N = 44189
+RunTime Output:  Time for My EDARA Algo: 13.092983 ms
+
+N = 132547
+RunTime Output:  Time for My EDARA Algo: 30.873247 ms
+
+N = 397643
+RunTime Output:  Time for My EDARA Algo: 57.614836 ms
+
+N = 1192937
+RunTime Output:  Time for My EDARA Algo: 140.853198 ms
+
+N = 3578807
+RunTime Output:  Time for My EDARA Algo: 423.0058 ms
+
+N = 10736413
+RunTime Output:  Time for My EDARA Algo: 2574.043819 ms
+
+Done!
+```
