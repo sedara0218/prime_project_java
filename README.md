@@ -178,6 +178,7 @@ Done!
 As can be seen above, my algorithm, while not the fastest, is much faster than the two slower Sieves!!!  If you are skeptical of my results you can view the geeksforgeeks.org site I linked above for the respective Sieve, download the Java code, modify the code so that you are using BigIntegers OR use my Sieve_EDARA_INTEGER.java file for testing instead of the Sieve_EDARA.java file.  The reason for this is that BigInteger adds to the runtime of the algorithm as it is basically a list of integers which obviously takes up more bytes than a simple primitive integer type.
 
 Posted below are the runtimes for my EDARA algo using the integer primitive type:
+
 *Note: this can be run by typing `java programEfficiency_EDARA_INT` in the terminal.
 ```
 N = 19
