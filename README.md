@@ -93,7 +93,7 @@ If you are well adversed with common prime generation algorithms, then you shoul
   * Sieve of Sundaram (https://www.geeksforgeeks.org/sieve-sundaram-print-primes-smaller-n/)
   * Sieve of Atkin (https://www.geeksforgeeks.org/sieve-of-atkin/)
   
-I downloaded the code posted on the geeksforgeeks.org website, and changed the int primitive type to BigInteger so that it would match the type I used in my own algorithm.  Posted below are the runtime comparisions when running each of the algorithms:
+I downloaded the code posted on the geeksforgeeks.org website, and modified the code so that instead of using the int primitive type they would use BigInteger so that it would match the type I used in my own algorithm.  Posted below are the runtime comparisions when running each of the algorithms:
 ```
 N = 19
 RunTime Output:  Time for My EDARA Algo: 0.515184 ms
@@ -175,4 +175,6 @@ RunTime Output:  Time for Sieve of Atkin Algo: 20202.084604 ms
 
 Done!
 ```
-As can be seen above, my algorithm, is faster than the Sieves!!!  If you are skeptical of my results you can view the geeksforgeeks.org site I linked above for the respective Sieve, download the Java code, modify the code so that you are using BigIntegers.  The reason for this is because BigInteger is basically a list of integers which allows the program to not be bounded by time constraints of the common primitive int type.
+While it seems my algorithm is more efficient than the other sieves, I still believe the Sieve of Atkin is faster than my algorithm. I created a version of my Java program using the int primitive type and tested this with the Sieve of Atkin posted as is on the geeksforgeeks site.  I found that Atkin was predominately much faster than my own algorithm, and this can be further backed up by the Big O analysis of the Sieve of Atkin.  With that being said the data structures used in the Integer version of Sieve of Atkin was an array whereas I used Maps and Lists which aren't as quick as using an array; thus adding overhead time to my algorithm.  I beleive I can further optimize the integer version of my Edara algorithm so that I don't need to use extensive data structures; which will help reduce my runtime.
+
+In addition, I beleive when it comes to prime generators, programmers should be using the BigInteger class since we are hopefully trying to deal with numbers beyond the scope of the primitive types.  Therefore from a strictly programming perspective I can strongly conclude my algorithm is the more effecient.
