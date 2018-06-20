@@ -1,3 +1,7 @@
+/*
+Author: Siddhartha Edara
+University: Wisconsin-Madison
+*/
 import PrimeClasses.Prime;
 
 import java.io.*;
